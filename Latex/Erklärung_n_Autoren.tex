@@ -16,7 +16,7 @@
         \vspace{1cm}
         \item dass wir unsere Belegarbeit mit dem Thema:\\
 
-        \textbf{\titel }\\
+        \textbf{\TextField[width=\columnwidth,multiline=true, height=2cm, name=Thema]{} }\\
 
         ohne fremde Hilfe angefertigt haben,
         \item dass wir die Übernahme wörtlicher Zitate aus der Literatur sowie die\\
@@ -26,7 +26,7 @@
     \end{enumerate}
     Wir sind uns bewusst, dass eine falsche Erklärung rechtliche Folgen haben wird.\\[1,5cm]
 
-    Glauchau, \abgabedatum\newline\noindent\rule{0.35\columnwidth}{0.4pt}\hspace{0.05\columnwidth}\rule{0.6\columnwidth}{0.4pt}\\
+   \rule{0.35\columnwidth}{0.4pt}\hspace{0.05\columnwidth}\rule{0.55\columnwidth}{0.4pt}\\
     Ort, Datum\hspace{0.27\columnwidth}Unterschriften
 
 
@@ -36,10 +36,7 @@
     \vspace*{2mm}
 
     \begin{minipage}{0.5\columnwidth}
-        \includesvg[width=\columnwidth]{vorlage/ba-gc-logo}
-        % Alternativ mit PNG Logo, falls Inkscape nicht installiert werden, bzw. nicht der PATH-Variable hinzugefügt werden soll.
-        %! Die SVG-Version sieht im Druck deutlich besser aus.
-        %\includegraphics[width=\columnwidth]{vorlage/ba-gc-logo}
+        \includesvg[width=\columnwidth]{ba-gc-logo}
     \end{minipage}
     \begin{minipage}{0.45\columnwidth}
         \begin{flushright}
@@ -60,24 +57,27 @@
 
     \begin{table}[H]
         \centering
-        \newcolumntype{Y}{>{\centering\arraybackslash}X}
-        \begin{tabularx}{\columnwidth}{|X|Y|Y|Y|}
+        \begin{tabularx}{\columnwidth}{|X|X|}
             \hline
-            Namen:            & \autoreins  & \autorzwei  & \autordrei \\
+            Namen:            & \TextField[width=7cm, name=Namen, multiline=true, height=3cm]{} \\
             \hline
-            Matrikelnummern:  & \matnumeins & \matnumzwei & \matnumdrei \\
+            Matrikelnummern:  & \TextField[width=7cm, name=Matrikelnummern, multiline=true, height=2cm]{} \\
             \hline
-            Studiengang:      & \multicolumn{3}{c|}{\studiengang}\\
+            Studiengang:      & \TextField[width=7cm, name=Studiengang]{}\\
             \hline
-            Titel der Arbeit: & \multicolumn{3}{c|}{\titel}\\
-                             %& \multicolumn{3}{c|}{zweite Zeile, falls nötig}\\
+            Titel der Arbeit: & \TextField[width=7cm, name=Thema, multiline=true, height=2cm]{}\\
             \hline
-            Datum:            & \multicolumn{3}{c|}{\abgabedatum}\\
+            Datum:            & \TextField[width=7cm, name=Namen]{}\\
             \hline
-            Unterschriften:   &             &             & \\
-                              &             &             &\\
+            Unterschriften:   & \\
+                              & \\
+                              & \\
+                              & \\
+                              & \\
+                              & \\
             \hline
         \end{tabularx}
     \end{table}
-
+    \vspace{3cm}
+    
     \vfill
