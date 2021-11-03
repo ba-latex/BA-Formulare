@@ -21,13 +21,13 @@
             \textbf{Thema:}                     & \TextField[name=Thema, charsize=14pt, multiline=true, height=2cm]{} \\
             \textbf{Jahr:}                      & \TextField[name=Jahr, charsize=14pt]{} \\
             \textbf{Betreuer:}                  & \begin{tabular}{@{}ll@{}}
-                                                      \TextField[name=Betreuer1,width=5.5cm, charsize=14pt]{}&(\TextField[name=Institution1, width=5.9cm, charsize=12pt]{})\\
-                                                      \TextField[name=Betreuer2, width=5.5cm, charsize=14pt]{}&(\TextField[name=Institution2, width=5.9cm, charsize=12pt]{})\\
+                                                      \TextField[name=Betreuer1,width=5.5cm, charsize=10pt]{}&\TextField[name=Institution1, width=5.9cm, charsize=8pt]{}\\
+                                                      \TextField[name=Betreuer2, width=5.5cm, charsize=10pt]{}&\TextField[name=Institution2, width=5.9cm, charsize=8pt]{}\\
                                                   \end{tabular}\\
         \end{tabularx}
     \end{table}
     \centering
-    \TextField[name=Abstract, multiline=true, height=13cm, width=\columnwidth, bordercolor=black]{}\\
+    \TextField[name=Abstract, multiline=true, height=15cm, width=\columnwidth, bordercolor=black]{}\\
         
     
     \clearpage
@@ -41,7 +41,7 @@
     \flushleft
     \normalsize
 
-    Hiermit erklären wir uns \TextField[value=einverstanden, name=Einverständnis, width=3.5cm]{}, dass die Bachelorthesis des Studierenden\\
+    Hiermit erklären wir uns \TextField[value=nicht einverstanden, name=Einverständnis, width=3.5cm]{}, dass die Bachelorthesis des Studierenden\\
 
     Name: \TextField[name=Name, width=7cm]{}\hfill Studiengang: \TextField[name=Studiengang, width=4cm]{}
 

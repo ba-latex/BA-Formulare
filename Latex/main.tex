@@ -7,6 +7,16 @@
 \Form
 \renewcommand\tabularxcolumn[1]{m{#1}}
 
+%! Section Befehl wird umgeschrieben, um Überschriften zu verbergen
+%! Kann, falls Überschriften gewollt sind, entfernt oder erst später eingefügt werden.
+% Beginn
+\renewcommand{\section}[1]{
+\par\refstepcounter{section}
+\sectionmark{#1}
+\addcontentsline{atoc}{section}{\bfseries\protect\numberline{\thesection}{\mdseries#1}}
+\lohead{\textnormal{#1}}
+}
+% Ende
 \include{Abstract_Freigabeerklärung_Bachelorthesis}
 \include{Erklärung_n_Autoren}
 \include{Erklärung_Praxisbeleg}
