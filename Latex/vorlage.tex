@@ -11,9 +11,6 @@
 
 \pdfsuppresswarningpagegroup=1
 
-\ProvidesPackage{metadaten}
-\usepackage{metadaten}
-
 \usepackage{tocbasic}
 \usepackage[ngerman]{babel}
 \usepackage[backend=biber, labeldateparts=true, style=authortitle, isbn=false, dashed=false]{biblatex}
@@ -235,9 +232,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 %! Hyperref und PDF-meta
 \usepackage[hidelinks]{hyperref}
-\hypersetup{pdftitle={\titel}}
-\hypersetup{pdfsubject={\kurzbeschreibung}}
-\hypersetup{pdfauthor={\autoren}}
+\hypersetup{pdftitle={Formulare BA Glauchau}}
 \usepackage[numbered]{bookmark}
 \usepackage{acronym}
 \usepackage{enumitem}
@@ -348,7 +343,7 @@
 \lohead{}
 \lofoot{}
 \cofoot{}
-\rofoot{\textnormal{Seite}~\pagemark}
+\rofoot{}
 \makeatletter
 \usepackage{geometry}
 \setlength{\footheight}{18.85002pt}
