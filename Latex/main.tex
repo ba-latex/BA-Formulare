@@ -1,19 +1,23 @@
 % main.tex - Hauptdatei der Vorlage
-
-\input{vorlage}
+% Vorlage
+\input{vorlage/vorlage}
+% vordefinierte Kommandos der Vorlage
+\input{vorlage/vorlage_subs/custom_commands}
+% Auf gleiche Art können auch eigene Kommandos in eine Datei wie 'inhalt/kommandos.tex' ausgelagert werden
 
 %Dokument-Anfang
 \begin{document}
 \Form
 \renewcommand\tabularxcolumn[1]{m{#1}}
+\renewcommand{\baselinestretch}{1}
 
-%! Section Befehl wird umgeschrieben, um Überschriften zu verbergen
+%! chapter Befehl wird umgeschrieben, um Überschriften zu verbergen
 %! Kann, falls Überschriften gewollt sind, entfernt oder erst später eingefügt werden.
 % Beginn
-\renewcommand{\section}[1]{
-\par\refstepcounter{section}
-\sectionmark{#1}
-\addcontentsline{atoc}{section}{\bfseries\protect\numberline{\thesection}{\mdseries#1}}
+\renewcommand{\chapter}[1]{
+\par\refstepcounter{chapter}
+\chaptermark{#1}
+\addcontentsline{atoc}{chapter}{\bfseries\protect\numberline{\thechapter}{\mdseries#1}}
 \lohead{\textnormal{#1}}
 }
 % Ende
